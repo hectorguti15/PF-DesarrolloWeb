@@ -1,0 +1,22 @@
+{
+  "name": "preentrega2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1","watch-css":"sass --watch scss/style.scss css/style2.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorguti15/Preentrega2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hectorguti15/Preentrega2/issues"
+  },
+  "homepage": "https://github.com/hectorguti15/Preentrega2#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}
