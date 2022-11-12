@@ -1,0 +1,19 @@
+@mixin display-flex ($flex-direction){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $flex-direction;
+}
+
+@mixin bloques-index_scss($img){
+    margin: 10px;  
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(240, 27%, 19%, 0.603), hsla(245, 39%, 28%, 0.603), hsla(246, 55%, 10%, 0.603)),$img;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsla(240, 27%, 19%, 0.603), hsla(245, 39%, 28%, 0.603), hsla(246, 55%, 10%, 0.603)),$img; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
