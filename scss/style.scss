@@ -23,6 +23,15 @@
 .galeria{
     @include bloques-index_scss(url(../img/ver-karaoke.jpg));
 }
+.carta:hover{
+    filter: brightness(100%);
+    transition: 0.8s;
+}
+.galeria:hover{
+    filter: brightness(100%);
+    transition: 0.8s;
+}
+
 
 .main-container{
     display: flex;
@@ -136,4 +145,9 @@
     p{
         font-family: $tipografia1;
     }
+}
+
+
+.carousel-item{
+    transition: 1s;
 }

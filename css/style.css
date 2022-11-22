@@ -1,7 +1,6 @@
-#grid{
-    display:grid;
-}
+
 #grid{  
+    display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:"header header header"
                         "main main main"
@@ -133,6 +132,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
 }
 .h1-carta{
     font-family:'Source Sans Pro', sans-serif;  
@@ -151,6 +152,12 @@
 }
 .img-slide{
         object-fit: cover;
+}
+.info-trago{
+    margin: 15px;
+}
+.marco{
+    box-shadow: 4px 0px 10px #c31432;
 }
 @media screen and (min-width:1024px) {
     .navbar{
@@ -289,12 +296,15 @@
     .marco{
         width: 500px;
         height: 500px;
-        box-shadow: 4px 0px 0px #c31432;
         margin: 20px;
+    }
+    .marco:hover{
+        transform: scale(1.05);
+        transition: 0.7s;
     }
     .carousel-item{
         width: 500px;
-        height: 400px;
+        height: 380px;
     }
     .nombre-trago{
         font-size: 20px;
@@ -445,14 +455,18 @@
         height: 200px;
     }
     .marco{
-        width: 300px;
-        height: 300px;
+        width: 400px;
+        height: 400px;
         box-shadow: 4px 0px 0px #c31432;
         margin: 20px;
     }
+    .marco:hover{
+        transform: scale(1.05);
+        transition: 0.7s;
+    }
     .carousel-item{
-        width: 300px;
-        height: 200px;
+        width: 400px;
+        height: 280px;
     }
     
     .nombre-trago{
@@ -475,7 +489,7 @@
         display: none;
     }
     #grid{  
-    grid-template-rows: 330px auto 200px;
+    grid-template-rows: 330px 1fr 350px;
     }
     .img-item{
         height: 100px;
@@ -636,14 +650,13 @@
         width: 300px;
     }
     .marco{
-        width: 200px;
-        height: 200px;
-        box-shadow: 4px 0px 0px #c31432;
+        width: 320px;
+        height: 400px;
         margin: 20px;
     }
     .carousel-item{
-        width: 200px;
-        height: 100px;
+        width:320px;
+        height: 280px;
     }
     
     .nombre-trago{
